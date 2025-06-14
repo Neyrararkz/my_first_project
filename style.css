@@ -52,6 +52,12 @@ a:hover{
 #deities{
     background-image: url(img/deities.png);
 }
+#worlds{
+    background-image: url(img/worlds.png);
+}
+#symbols{
+    background-image: url(img/symbols.png);
+}
 .leftside-1{
     width: 300px;
     height: auto;
@@ -174,7 +180,6 @@ a:hover{
 .deities-card:hover{
     transform: scale(1.05);
 }
-
 #deities-grid img{
     width: 186px;
     height: auto;
