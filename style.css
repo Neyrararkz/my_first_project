@@ -1,5 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@400;500;700&family=Source+Serif+Pro:wght@400;600&family=Underdog:wght@400;500;700&family=Ysabeau+Office:wght@400;600&family=Advent+Pro:wght@400;500;700&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Source+Serif+Pro:wght@500&family=Underdog:wght@400&family=Ysabeau+Office:wght@500&family=Advent+Pro:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap");  
 
 *{
     -webkit-font-smoothing: antialiased;
@@ -58,6 +59,9 @@ a:hover{
 #symbols{
     background-image: url(img/symbols.png);
 }
+#chronicles{
+    background-image: url(img/chronicles.png);
+}
 .leftside-1{
     width: 300px;
     height: auto;
@@ -104,7 +108,7 @@ a:hover{
     border-radius: 10px;
 }
 .main{
-    max-width: 1200px;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,6 +151,27 @@ a:hover{
 #worlds-grid{
     gap: 50px;
 }
+.chronicles-container{
+    position:relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.chronicles-container img{
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+}
+.chronicles-grid{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    z-index: 2;
+}
+
 .card{
     width: 260px;
     height: 150px;
@@ -159,6 +184,7 @@ a:hover{
 }
 .card:hover{
     transform: scale(1.08);
+    filter: drop-shadow(0px 0px 5px white);
 }
 .deities-card{
     width: 180px;
@@ -179,6 +205,7 @@ a:hover{
 }
 .deities-card:hover{
     transform: scale(1.05);
+    filter: drop-shadow(0px 0px 5px black);
 }
 #deities-grid img{
     width: 186px;
@@ -187,6 +214,10 @@ a:hover{
 #worlds-card{
     width: 270px;
     height: 270px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0, 0.5);
 }
 .circle{
     position: absolute;
@@ -213,13 +244,24 @@ a:hover{
 .circle:nth-child(5) { transform: rotate(240deg) translateY(-240px) rotate(-240deg); }
 .circle:nth-child(6) { transform: rotate(300deg) translateY(-240px) rotate(-300deg); }
 
-.circle:nth-child(1):hover { transform: scale(1.05) translateY(-240px); }
-.circle:nth-child(2):hover { transform: scale(1.05) rotate(60deg) translateY(-240px) rotate(-60deg); }
-.circle:nth-child(3):hover { transform: scale(1.05) rotate(120deg) translateY(-240px) rotate(-120deg); }
-.circle:nth-child(4):hover { transform: scale(1.05) translateY(240px); }
-.circle:nth-child(5):hover { transform: scale(1.05) rotate(240deg) translateY(-240px) rotate(-240deg); }
-.circle:nth-child(6):hover { transform: scale(1.05) rotate(300deg) translateY(-240px) rotate(-300deg); }
+.circle:nth-child(1):hover { transform: scale(1.08) translateY(-220px); filter: drop-shadow(0px 0px 5px rgb(255, 115, 0));}
+.circle:nth-child(2):hover { transform: scale(1.08) rotate(60deg) translateY(-220px) rotate(-60deg); filter: drop-shadow(0px 0px 5px rgb(255, 230, 0));}
+.circle:nth-child(3):hover { transform: scale(1.08) rotate(120deg) translateY(-220px) rotate(-120deg); filter: drop-shadow(0px 0px 5px rgb(81, 255, 0));}
+.circle:nth-child(4):hover { transform: scale(1.08) translateY(220px); filter: drop-shadow(0px 0px 5px rgb(0, 140, 255));}
+.circle:nth-child(5):hover { transform: scale(1.08) rotate(240deg) translateY(-220px) rotate(-240deg); filter: drop-shadow(0px 0px 5px rgb(255, 255, 255));}
+.circle:nth-child(6):hover { transform: scale(1.08) rotate(300deg) translateY(-220px) rotate(-300deg); filter: drop-shadow(0px 0px 5px rgb(255, 0, 0));}
 
+.chronicles-card{
+    width: 400px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-size: cover;
+    gap: 20px;
+    padding-bottom: 110px;
+}
 .card h3{
     font-family: 'Underfog';
     font-size: 16px;
@@ -229,9 +271,14 @@ a:hover{
     padding: 5px;
     width: 100%;
 }
+#worlds-card h3{
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
 .circle h3{
     font-family: 'Advent Pro';
-    font-size: 22px;
+    font-size: 18px;
     color: white;
     text-align: center;
     text-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
@@ -244,6 +291,26 @@ a:hover{
 #central-circle h3{
     font-family: 'Ysabeau Office';
     font-weight: bold;
+}
+.chronicles-card h3{
+    max-width: 210px;
+    font-family: 'Vollkorn';
+    font-size: 12.3px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.chronicles-card a{
+    font-family: 'Vollkorn';
+    font-size: 12.3px;
+}
+.chronicles-card a:hover{
+    color: #770f0f;
+}
+.chronicles-card b{
+    font-weight: bold;
+}
+.chronicles-card i{
+    font-style: italic;
 }
 .rightside{
     width: 300px;
