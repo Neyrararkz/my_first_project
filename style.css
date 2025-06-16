@@ -1,6 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Source+Serif+Pro:wght@500&family=Underdog:wght@400&family=Ysabeau+Office:wght@500&family=Advent+Pro:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vollkorn:wght@500&display=swap");  
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Source+Serif+Pro:wght@500&family=Underdog:wght@400&family=Ysabeau+Office:wght@500&family=Advent+Pro:wght@500&family=Vollkorn:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@500&family=Alata:wght@400&display=swap");  
 
 *{
     -webkit-font-smoothing: antialiased;
@@ -40,10 +40,37 @@ a{
 a:hover{
     color: #ffffffb2;
 }
-
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #fffffff5;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  right: 0;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+.dropdown-content img{
+    width: 15px;
+}
+.go-out{
+    display: flex;
+    align-items: center;
+}
 .main-content{
     display: flex;
-    padding: 25px 40px;  
+    padding: 25px;  
     background-size: cover;
     justify-content: space-between;
 }
@@ -61,6 +88,10 @@ a:hover{
 }
 #chronicles{
     background-image: url(img/chronicles.png);
+}
+#profile{
+    background-image: url(img/profile.png);
+    justify-content: center;
 }
 .leftside-1{
     width: 300px;
@@ -112,6 +143,11 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#profile-main{
+    background-color: #E5E7ED;
+    width: 1000px;
+    height: 809px;
 }
 .main h1{
     font-family: 'Underdog'; 
@@ -319,6 +355,126 @@ a:hover{
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+.profile-tittle{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Alegreya Sans SC';
+    font-weight: bold;
+}
+.profile-content{
+    flex: 4;
+    width: 90%;
+    display: flex;
+    padding: 10px 0;
+}
+.profile-photo{
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Alegreya Sans SC';
+}
+.profile-photo img{
+    width: 150px;
+    border-radius: 50%;
+}
+.profile-photo button{
+    width: 160px;    
+}
+.profile-white-buttons{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.profile-white-buttons div{
+    background-color: white; 
+    width: 100%;
+    height: 35px; 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.profile-white-buttons h3{
+    width: 100%;
+    text-align: center;
+    font-family: 'Alegreya Sans SC';
+}
+.profile-white-buttons img{
+    width: 20px;
+    border-radius: 0;
+}
+.profile-content button{
+    font-size: 15px;
+    height: 30px;
+    border: none;
+    background-color: #292D32;
+    color: white;
+    cursor: pointer;
+}
+.profile-info{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.profile-info div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Underdog';
+}
+.profile-info div input{
+    width: 300px;
+    height: 35px;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Alata';
+}
+.support{
+    width: 90%;
+    flex: 2;
+    display: flex;
+    padding: 10px 0;
+}
+.support-left{
+    flex: 1.2;
+}
+.support-right{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.support-right div{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Underdog';
+}
+.support-right div h3{
+    font-family: 'Alata';
+}
+.profile-tittle button{
+    width: 250px;
+    height: 45px;
+    font-family: 'Alegreya Sans SC';
+    font-size: 16px;
+    background-color: white;
+    border: 0.5px solid black;
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0, 0.5));
+    border-radius: 5px;
+    cursor: pointer;
+}
+#profile-main hr{
+    border: 0;
+    border-top: 0.05px solid black;
+    width: 90%;
 }
 @media(max-width: 1200px){
     .myths-grid{
