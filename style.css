@@ -108,7 +108,7 @@ hr{
 #login{
     background-image: url(img/login.png);
 }
-#signin{
+#signup{
     background-image: url(img/signup.png);
 }
 .leftside-1{
@@ -494,33 +494,38 @@ hr{
     border-top: 0.05px solid black;
     width: 90%;
 }
-.login{
+.logsign{
     width: 450px;
-    height: 580px;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
 }
-.login h5{
+#login-card{
+    height: 570px;
+}
+#signup-card{
+    height: 660px;
+}
+.logsign h5{
     font-family: 'Alegreya Sans SC';
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     margin: 40px;
 }
-.login input, button{
+.logsign input, button{
     width: 85%;
     height: 45px;
     margin: 5px 0;
-    padding: 15px;
+    padding: 10px 15px;
     border: 1.5px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
-.login, .remember-forgot h4{
+.logsign, .remember-forgot h4{
     font-family: 'Albert Sans';
 }
-.login a{
+.logsign a{
     text-decoration: none;
     color: #001877;
 }
@@ -529,7 +534,7 @@ hr{
     padding: 0 35px;
     padding-top: 20px;
     font-weight: bolder;
-}
+} 
 .remember-forgot{
     width: 85%;
     height: 50px;
@@ -545,6 +550,7 @@ hr{
 .remember input{
     width: 15px;
     height: 15px;
+    cursor: pointer;
 }
 .signin-btn{
     background-color: #171A32;
@@ -559,6 +565,9 @@ hr{
     color: #171A32;
     border: 1px solid #171A32;
     transform: scale(1.005);
+}
+.signin-btn a{
+    color: white;
 }
 .dont-have-text{
     display: flex;
