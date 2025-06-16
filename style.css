@@ -61,6 +61,9 @@ hr{
   text-decoration: none;
   display: block;
 }
+.dropdown-content a:hover{
+    color: #7a1d5f;
+}
 .dropdown:focus-within .dropdown-content {
   display: block;
 }
@@ -94,6 +97,10 @@ hr{
 }
 #profile{
     background-image: url(img/profile.png);
+    justify-content: center;
+}
+#main{
+    background-image: url(img/main.png);
     justify-content: center;
 }
 .logsign-body{
@@ -161,6 +168,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
 }
 #profile-main{
     background-color: #E5E7ED;
@@ -356,6 +364,8 @@ hr{
 .chronicles-card a{
     font-family: 'Vollkorn';
     font-size: 12.3px;
+    text-decoration: none;
+    color: black;
 }
 .chronicles-card a:hover{
     color: #770f0f;
@@ -402,7 +412,7 @@ hr{
     border-radius: 50%;
 }
 .profile-photo button{
-    width: 160px;    
+    width: 180px;    
 }
 .profile-white-buttons{
     width: 70%;
@@ -434,6 +444,12 @@ hr{
     background-color: #292D32;
     color: white;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-content button:active{
+    transform: scale(1.005);
 }
 .profile-info{
     flex: 2;
@@ -477,6 +493,10 @@ hr{
 }
 .support-right div h3{
     font-family: 'Alata';
+    cursor: pointer;
+}
+.support-right div h3:hover{
+    transform: scale(1.01);
 }
 .profile-tittle button{
     width: 250px;
@@ -485,9 +505,12 @@ hr{
     font-size: 16px;
     background-color: white;
     border: 0.5px solid black;
-    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 0px 2px rgb(0, 0, 0, 0.2));
     border-radius: 5px;
     cursor: pointer;
+}
+.profile-tittle button:active{
+    transform: scale(1.01);
 }
 #profile-main hr{
     border: 0;
@@ -514,7 +537,7 @@ hr{
     font-size: 30px;
     margin: 40px;
 }
-.logsign input, button{
+.logsign input, button, .signin-btn{
     width: 85%;
     height: 45px;
     margin: 5px 0;
@@ -554,10 +577,12 @@ hr{
 }
 .signin-btn{
     background-color: #171A32;
-    color: white;
     font-family: 'Albert Sans';
     font-size: 16px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .signin-btn:active{
@@ -566,7 +591,7 @@ hr{
     border: 1px solid #171A32;
     transform: scale(1.005);
 }
-.signin-btn a{
+#signin-a{
     color: white;
 }
 .dont-have-text{
@@ -601,6 +626,10 @@ hr{
 .google-btn img{
     width: 25px;
     height: 25px;
+}
+#main img{
+    width: 898px;
+    filter: drop-shadow(0px 0px 30px rgb(0, 0, 0, 0.7));
 }
 
 @media(max-width: 1200px){
