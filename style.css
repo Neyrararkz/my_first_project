@@ -162,8 +162,12 @@ hr{
     color: white;
     cursor: pointer;
 }
-.leftside-1 h4:hover, .leftside-1 h5:hover{
+.leftside-1 h4:hover, .leftside-1 h5:hover, .leftside-1 a:hover{
     color: #ffffffcc;
+}
+.leftside-1 a{
+    text-decoration: none;
+    color: white;
 }
 .mythologies img{
     width: 30px;
