@@ -105,7 +105,16 @@ hr{
     justify-content: center;
 }
 #myths-info{
-    background-image: url(img/Jinx.jpg);
+    background-image: url(img/myths-info.png);
+}
+#deities-info{
+    background-image: url(img/deities-info.png);
+}
+#worlds-info{
+    background-image: url(img/worlds-info.png);
+}
+#symbols-info{
+    background-image: url(img/symbols-info.png);
 }
 .logsign-body{
     background-size: cover;
