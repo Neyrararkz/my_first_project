@@ -116,6 +116,9 @@ hr{
 #symbols-info{
     background-image: url(img/symbols-info.png);
 }
+#chronicles-info{
+    background-image: url(img/chronicles-info.png);
+}
 .logsign-body{
     background-size: cover;
 }
